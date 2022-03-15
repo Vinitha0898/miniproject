@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FOODiee Page</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">FOODIee</h2>
+            <div class="toggle "></div>
+        </header>
+        <video src="video.mp4" muted loop autoplay></video> 
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Yourself from Craving</h3>
+            <p>"Someone who is passionate about food. Usually, 
+                they are willing to travel for good food or express their passion through 
+                a blog or another online platform".</p>
+                <a href="#">Explore</a>
+                 
+        </div>
+        <ul class="social">
+            <li><a href="#"></a><img src="facebook.png" alt=""></li>
+            <li><a href="#"></a><img src="twitter.png" alt=""></li>
+            <li><a href="#"></a><img src="Instagram.png" alt=""></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
